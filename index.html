@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">
+                Home
+            </a>
+            <a class="cabecalho__menu__link" href="about.html">
+                Sobre
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="container__titulo">Decodificador de Texto</h1>
+
+            <section class="container__titulo__texto">
+                <div class="container__titulo__texto__esquerda">
+                    <textarea id="inputText" placeholder="Digite o texto a ser criptografado."></textarea>
+                    <p class="container__aviso">
+                        <img src="./assets/exclamation.png" alt="Ponto de exclamacao" class="container__aviso__imagem" />
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+
+                    <div class="container__botao">
+                        <button onclick="criptografar()" id="buttonCriptografar" class="container__botao__crip" >Criptografar</button>
+                        <button onclick="descriptografar()" id="buttonDescriptografar" class="container__botao__descrip" >Descriptografar</button>
+                    </div>
+                </div>
+                <div class="container__titulo__texto__direita">
+                    <textarea id="outputText" readonly placeholder="A mensagem aparecerá aqui."></textarea>
+                    <button onclick="copiarTexto()" id="buttonCopiarTexto" class="container__botao__copiar">Copiar</button>
+                </div>
+            </section>
+
+            
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Nicole Gabriel. 2024.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
